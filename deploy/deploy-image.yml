@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of scientificcalculator
+  hosts: all
+  tasks:
+    - name: Pull cont1 image
+      docker_image:
+        name: deept1/cont1
+        source: pull
